@@ -29,7 +29,7 @@
 
 		<?php do_action( 'ocean_before_wrap' ); ?>
 
-		<div id="wrap" class="clr">
+		<div id="wrap" class="clre">
 
 			<?php do_action( 'ocean_top_bar' ); ?>
 
