@@ -31,3 +31,15 @@ function oceanwp_child_enqueue_parent_style() {
 }
 
 add_action( 'wp_enqueue_scripts', 'oceanwp_child_enqueue_parent_style' );
+
+function add_admin_link_to_menu($items, $args) {
+
+    if ($args->theme_location == 'principal' && is_user_logged_in()) {
+
+        $items .= '<li><a href="' . admin_url() . '">Admin</a></li>';
+    }
+    return $items;
+}
+
+add_filter('wp_nav_menu_items', 'add_admin_link_to_menu', 10, 2);
+?>

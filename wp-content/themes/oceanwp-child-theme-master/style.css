@@ -126,8 +126,6 @@ input[type="submit"] {
     padding: 9px 0px;
     justify-content: center;
     align-items: center;
-    flex-shrink: 0;
-    background-color: #e0b9b4;
     margin-top: 25px;
 }
 
@@ -152,21 +150,21 @@ form input[type=number] {
     margin-bottom: 0;
 }
 
+.row {
+    display: flex;
+    flex-direction: row;
+    column-gap: 60px;
+}
+
 .column {
-    float: left;
+    display: flex;
+    flex-direction: column;
     width: 50%;
-    padding: 10px;
     line-height: 3;
 }
 
 .separator {
-    width: 1px;
-    background-color: #fff;
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 50%;
-    max-height: 465px;
+    border: solid 1px white;
 }
 
 .column h2 {
@@ -182,4 +180,10 @@ form input[type=number] {
     font-family: 'Syne', sans-serif;
     font-size: 20px;
     font-weight: 400;
+}
+
+.center-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
