@@ -156,30 +156,32 @@ form input[type=number] {
     column-gap: 60px;
 }
 
+@media only screen and (max-width: 1092px) {
+    .row {
+        flex-wrap: wrap; 
+    }
+}
+
 .column {
     display: flex;
     flex-direction: column;
-    width: 50%;
     line-height: 3;
-}
-
-.separator {
-    border: solid 1px white;
+    width: 100%;
 }
 
 .column h2 {
     color: #FFF;
-    font-family: 'Syne', sans-serif;
-    font-size: 30px;
     font-weight: 700;
     margin-bottom: 20px;
 }
 
 .column label {
     color: #FFF;
-    font-family: 'Syne', sans-serif;
-    font-size: 20px;
     font-weight: 400;
+}
+
+.separator {
+    border: solid 1px white;
 }
 
 .center-button {
