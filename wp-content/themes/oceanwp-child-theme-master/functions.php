@@ -31,4 +31,18 @@ function oceanwp_child_enqueue_parent_style() {
 }
 
 add_action( 'wp_enqueue_scripts', 'oceanwp_child_enqueue_parent_style' );
+
+add_filter('wp_nav_menu_objects', 'exclude_admin_link_when_logged_out', 10, 2);
+
+function exclude_admin_link_when_logged_out($items, $args) {
+    if (!is_user_logged_in()) {
+        foreach ($items as $key => $item) {
+            if ($item->title == 'Admin') {
+                unset($items[$key]);
+            }
+        }
+    }
+
+    return $items;
+}
 ?>
