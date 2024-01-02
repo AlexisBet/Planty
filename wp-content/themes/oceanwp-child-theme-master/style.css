@@ -77,15 +77,14 @@ body .is-layout-flex {
     justify-content: center;
 }
 
-.uagb-block-cdbb3052.wp-block-uagb-image {
-    position: absolute;
-    bottom: 0px;
-    right: 40px;
-}
-
-
 #footer-widgets {
     padding: 0;
+}
+
+.wp-block-uagb-container.uagb-block-07ac2439 .wp-block-uagb-image {
+    position: absolute;
+    bottom: -1px;
+    right: 5%;
 }
 
 .form-contact {
@@ -110,7 +109,6 @@ form textarea {
     background: #FFF;
     max-height: 237px;
     width: 100%;
-    flex-shrink: 0;
     border-radius: 7px;
     resize: none;
 }
