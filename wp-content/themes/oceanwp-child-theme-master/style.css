@@ -111,6 +111,8 @@ form textarea {
     width: 100%;
     border-radius: 7px;
     resize: none;
+    position: relative;
+    z-index: 2;
 }
 
 .wp-block-uagb-container.uagb-block-a97c52ff,.wp-block-uagb-container.uagb-block-2080c066 {
@@ -118,13 +120,18 @@ form textarea {
 }
 
 input[type="submit"] {
+    background-color: #E0B9B4 !important;
     display: flex;
-    width: 198px;
+    width: 100%;
     height: 55px;
-    padding: 9px 0px;
     justify-content: center;
-    align-items: center;
-    margin-top: 25px;
+    margin-top: 20px;
+    font-weight: 400;
+    text-transform: none;
+}
+
+input[type="submit"]:hover {
+    background-color: #C02E44 !important;
 }
 
 .wp-block-separator.is-style-wide {
@@ -182,8 +189,22 @@ form input[type=number] {
     border: solid 1px white;
 }
 
+@media only screen and (max-width: 768px) {
+    .separator {
+        width: 100%;
+        margin: 10%;
+    }
+}
+
 .center-button {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+}
+
+.form-contact img {
+    position: absolute;
+    left: 33%;
+    bottom: 11%;
+    z-index: 1;
 }
