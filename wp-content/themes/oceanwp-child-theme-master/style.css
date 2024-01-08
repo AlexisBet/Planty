@@ -142,6 +142,7 @@ input[type="submit"]:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-bottom: 40px;
 }
 
 form input[type=number] {
@@ -159,6 +160,7 @@ form input[type=number] {
     display: flex;
     flex-direction: row;
     column-gap: 60px;
+    margin-top: 60px;
 }
 
 @media only screen and (max-width: 1092px) {
